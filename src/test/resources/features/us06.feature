@@ -12,7 +12,7 @@ Feature: Books module
     When the librarian enter author "<Author>"
     And the librarian choose the book category "<Book Category>"
     And the librarian click to save changes
-    Then verify “The book has been created" message is displayed
+    Then verify "The book has been created" message is displayed
     And verify "<Book Name>" information must match with DB
     Examples:
       | Book Name             | ISBN     | Year | Author          | Book Category        |
