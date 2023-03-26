@@ -1,11 +1,16 @@
-/*package com.library.steps;
+package com.library.steps;
 
+import com.library.pages.BasePage;
 import com.library.utility.DB_Util;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-public class UserInfoStepDefs {
+
+import java.util.List;
+
+public class US01BH_UserInfoStepDefs {
+
     String actualUserCount;
     @Given("Establish the database connection")
     public void establish_the_database_connection() {
@@ -37,16 +42,36 @@ public class UserInfoStepDefs {
         // MAKE ASSERTIONS
         Assert.assertEquals(expectedUserCount,actualUserCount);
 
+    }
+
+
+    List<String> actualList;
+    // US01-2
+    @When("Execute query to get all columns")
+    public void execute_query_to_get_all_columns() {
+        DB_Util.runQuery("select * from users");
+     actualList = DB_Util.getAllColumnNamesAsList();
+        System.out.println("actualList = " + actualList);
+
+
+    }
+    @Then("verify the below columns are listed in result")
+    public void verify_the_below_columns_are_listed_in_result(List<String> expectedList) {
+
+        System.out.println("expectedList = " + expectedList);
+        // Assertions
+        Assert.assertEquals(expectedList, actualList);
+
+
+
         //CLOSE CONN
         // DB_Util.destroy();
         System.out.println("**********************************************");
         System.out.println("*** DESTROY  WILL BE DONE WITH HOOK CLASS***");
         System.out.println("**********************************************");
+    }
+
 
 
     }
 
-}
-
-
- */
