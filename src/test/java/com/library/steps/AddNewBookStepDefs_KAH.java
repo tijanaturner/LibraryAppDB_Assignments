@@ -10,7 +10,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class AddNewBookStepDefs extends BasePage {
+public class AddNewBookStepDefs_KAH extends BasePage {
     LoginPage loginPage = new LoginPage();
     BookPage bookPage = new BookPage();
     String expectedBookName;
