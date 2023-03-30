@@ -20,7 +20,6 @@ public class Hooks {
         Driver.getDriver().manage().window().maximize();
         Driver.getDriver().get(ConfigurationReader.getProperty("library_url"));
 
-
     }
 
     @After("@ui")
