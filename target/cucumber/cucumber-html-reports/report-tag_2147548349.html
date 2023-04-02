@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>02 Apr 2023, 15:00</td>
+      <td>02 Apr 2023, 15:14</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="66450000">0.066</td>
+          <td class="duration" data-value="10634482000">10.634</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -171,25 +171,26 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_353054046.html">As a data consumer, I want to know genre of books are being borrowed the most</a>
+      <a href="report-feature_1480450139.html">As a librarian, I want to know borrowed books number</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_1329790754.html">@US05TT</a>
+       <a href="report-tag_1329787710.html">@US02ON</a>
+       <a href="report-tag_2147548883.html">@ui</a>
        <a href="report-tag_2147548349.html">@db</a>
 </div>
 
 
-  <span class="lead-duration duration">0.066</span>
+  <span class="lead-duration duration">10.634</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">verify the the common book genre that&rsquo;s being borrowed</span>
+  <span class="name">verify the total amount of borrowed books</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -218,9 +219,25 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
+              <span class="location name">com.library.steps.Hooks.setUp()</span>
+
+  <span class="lead-duration duration">12.397</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
               <span class="location name">com.library.steps.Hooks.setUpDB()</span>
 
-  <span class="lead-duration duration">1.253</span>
+  <span class="lead-duration duration">1.791</span>
 
           </div>
 
@@ -255,9 +272,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">Establish the database connection</span>
+  <span class="name">the <span class="argument">&quot;librarian&quot;</span> on the home page</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">10.514</span>
 
 </div>
 
@@ -282,9 +299,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">I execute query to find most popular book genre</span>
+  <span class="name">the librarian gets borrowed books number</span>
 
-  <span class="lead-duration duration">0.060</span>
+  <span class="lead-duration duration">0.052</span>
 
 </div>
 
@@ -309,9 +326,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">verify <span class="argument">&quot;Fantasy&quot;</span> is the most popular book genre.</span>
+  <span class="name">borrowed books number information must match with DB</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.067</span>
 
 </div>
 
@@ -356,7 +373,23 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.library.steps.Hooks.destroyDB()</span>
 
-  <span class="lead-duration duration">0.012</span>
+  <span class="lead-duration duration">0.004</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.library.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.202</span>
 
           </div>
 
