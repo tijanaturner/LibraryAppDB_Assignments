@@ -30,7 +30,7 @@ public class US07BT_StepDefs {
 
     String bookName;
 
-    @Given("the {string} on the home page")
+   /* @Given("the {string} on the home page")
     public void theOnTheHomePage(String user) {
         BrowserUtil.waitForPageToLoad(15);
         loginPage.login("student");
@@ -42,7 +42,7 @@ public class US07BT_StepDefs {
         BrowserUtil.waitForPageToLoad(10);
         bookPage.navigateModule("Books");
 
-    }
+    }*/
 
     @And("the user searches for {string} book")
     public void theUserSearchesForBook(String bookName) {

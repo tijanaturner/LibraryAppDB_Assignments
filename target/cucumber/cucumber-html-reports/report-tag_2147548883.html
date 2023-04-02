@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>28 Mar 2023, 14:11</td>
+      <td>02 Apr 2023, 14:38</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@ui</td>
-          <td      class="passed"    >5</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >3</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
           <td class="total">5</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="14659538000">14.659</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="27240785000">27.240</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -183,12 +183,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">14.659</span>
+  <span class="lead-duration duration">27.240</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Verify book information with DB</span>
 
@@ -199,7 +199,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -221,7 +221,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.library.steps.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">3.451</span>
+  <span class="lead-duration duration">14.751</span>
 
           </div>
 
@@ -237,7 +237,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.library.steps.Hooks.setUpDB()</span>
 
-  <span class="lead-duration duration">0.859</span>
+  <span class="lead-duration duration">1.064</span>
 
           </div>
 
@@ -254,9 +254,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -266,7 +266,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -274,7 +274,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">the <span class="argument">&quot;librarian&quot;</span> on the home page</span>
 
-  <span class="lead-duration duration">4.344</span>
+  <span class="lead-duration duration">10.751</span>
 
 </div>
 
@@ -301,7 +301,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">the user navigates to <span class="argument">&quot;Books&quot;</span> page</span>
 
-  <span class="lead-duration duration">2.053</span>
+  <span class="lead-duration duration">4.135</span>
 
 </div>
 
@@ -328,7 +328,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">the user searches for <span class="argument">&quot;GoodBook12&quot;</span> book</span>
 
-  <span class="lead-duration duration">2.079</span>
+  <span class="lead-duration duration">0.221</span>
 
 </div>
 
@@ -351,11 +351,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
   <span class="name">the user clicks edit book button</span>
 
-  <span class="lead-duration duration">4.055</span>
+  <span class="lead-duration duration">12.129</span>
 
 </div>
 
@@ -363,6 +363,43 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[3][.='null']/../td/a&quot;}
+  (Session info: chrome=111.0.5563.146)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Tijanas-MacBook-Air.local', ip: '2601:6c4:200:79f0:0:0:0:af1f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/wp/mwq202b54vq...}, goog:chromeOptions: {debuggerAddress: localhost:62065}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 12e32fc7c88f4febfe893b9162253725
+*** Element info: {Using=xpath, value=//td[3][.='null']/../td/a}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.library.pages.BookPage.editBook(BookPage.java:55)
+	at com.library.steps.US04_EM_StepDef.the_user_clicks_edit_book_button(US04_EM_StepDef.java:46)
+	at &#10045;.the user clicks edit book button(file:///Users/tijanaturner/IdeaProjects/LibraryAppDB_Assignments/src/test/resources/features/us04.feature:8)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -378,11 +415,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">book information must match the Database</span>
 
-  <span class="lead-duration duration">2.126</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -409,7 +446,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -421,13 +458,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.library.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+              <span class="location name">com.library.steps.Hooks.destroyDB()</span>
 
-  <span class="lead-duration duration">0.114</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -441,9 +478,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.library.steps.Hooks.destroyDB()</span>
+              <span class="location name">com.library.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.678</span>
 
           </div>
 
@@ -452,6 +489,21 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>screenshot</a>
+      <a href="embeddings/embedding_925340670.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_925340670.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>

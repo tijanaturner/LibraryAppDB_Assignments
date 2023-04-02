@@ -17,16 +17,19 @@ public class AddNewBookStepDefs_KAH extends BasePage {
 
 
 
-    @Given("the {string} on the home page")
-    public void the_on_the_home_page(String userType) {
-        loginPage.login(userType);
+    /* @Given("the {string} on the home page")
+     public void the_on_the_home_page(String userType) {
+         loginPage.login(userType);
 
-    }
-    @Given("the user navigates to {string} page")
-    public void the_user_navigates_to_page(String moduleName) {
-        navigateModule(moduleName);
+     }
 
-    }
+     @Given("the user navigates to {string} page")
+     public void the_user_navigates_to_page(String moduleName) {
+         navigateModule(moduleName);
+
+     }
+
+      */
     @When("the librarian click to add book")
     public void the_librarian_click_to_add_book() {
         bookPage.addBook.click();

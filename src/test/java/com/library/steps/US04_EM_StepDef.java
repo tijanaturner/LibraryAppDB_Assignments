@@ -18,25 +18,28 @@ public class US04_EM_StepDef extends BasePage {
     String bookName;
 
 
-    @Given("the {string} on the home page")
+  /*  @Given("the {string} on the home page")
     public void the_on_the_home_page(String userType) {
 
         BrowserUtil.waitFor(4);
         loginPage.login(userType);
 
     }
+
     @Given("the user navigates to {string} page")
     public void the_user_navigates_to_page(String page) {
         //navigate to books page
         BrowserUtil.waitFor(2);
         navigateModule(page);
      }
+
+
     @When("the user searches for {string} book")
     public void the_user_searches_for_book(String BookName) {
         BrowserUtil.waitFor(2);
         bookName = BookName;
         bookPage.search.sendKeys(BookName);
-    }
+    }*/
     @When("the user clicks edit book button")
     public void the_user_clicks_edit_book_button() {
         BrowserUtil.waitFor(2);
