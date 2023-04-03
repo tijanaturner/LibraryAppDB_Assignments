@@ -40,8 +40,9 @@ public class US04_EM_StepDef extends BasePage {
         bookName = BookName;
         bookPage.search.sendKeys(BookName);
     }*/
-    @When("the user clicks edit book button")
-    public void the_user_clicks_edit_book_button() {
+    @When("the user clicks edit {string} book button")
+    public void the_user_clicks_edit_book_button(String bookName) {
+        this.bookName=bookName;
         BrowserUtil.waitFor(2);
         bookPage.editBook(bookName).click();
         BrowserUtil.waitFor(2);
